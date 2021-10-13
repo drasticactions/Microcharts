@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net6.0-windows10.0.19041</TargetFrameworks>
+        <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+        <PackagingPlatform>net6.0-windows</PackagingPlatform>
+        <Platforms>AnyCPU;x86</Platforms>
+        <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SkiaSharp.Views.WinUI" Version="$(SkiaSharpVersion)" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Microcharts\Microcharts.csproj" />
+    </ItemGroup>
+
+</Project>

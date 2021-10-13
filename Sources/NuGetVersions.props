@@ -1,0 +1,5 @@
+<Project>
+	<PropertyGroup>
+		<SkiaSharpVersion Condition=" '$(SkiaSharpVersion)' == '' ">2.88.0-preview.150</SkiaSharpVersion>
+	</PropertyGroup>
+</Project>
