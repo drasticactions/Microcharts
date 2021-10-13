@@ -3,6 +3,7 @@ using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.Hosting;
 using Microcharts.Maui;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace Microcharts.Samples.Maui
 {
@@ -13,7 +14,7 @@ namespace Microcharts.Samples.Maui
 			var builder = MauiApp.CreateBuilder();
 			builder
 				.UseMauiApp<App>()
-                .UseMicrocharts()
+                .UseSkiaSharp()
                 .ConfigureFonts(fonts =>
 				{
 					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
